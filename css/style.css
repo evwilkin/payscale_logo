@@ -1,0 +1,24 @@
+.container {
+  height: 350px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.gray,
+.red,
+.empty {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.red {
+  background-color: maroon;
+}
