@@ -1,3 +1,14 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
 .container {
   height: 350px;
   width: 280px;
@@ -15,6 +26,12 @@
   border-radius: 50%;
 }
 
+.gray,
+.red {
+  position: relative;
+  top: -1000px;
+}
+
 .gray {
   background-color: gray;
 }
@@ -22,3 +39,90 @@
 .red {
   background-color: maroon;
 }
+
+@keyframes dropIn {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+}
+
+.one {
+  animation: dropIn .65s ease;
+  animation-fill-mode: forwards;
+}
+
+.two {
+  animation: dropIn .6s ease;
+  animation-fill-mode: forwards;
+  animation-delay: .3s;
+}
+
+.three {
+  animation: dropIn .6s ease;
+  animation-fill-mode: forwards;
+  animation-delay: .6s;
+}
+
+.four {
+  animation: dropIn .6s ease;
+  animation-fill-mode: forwards;
+  animation-delay: .9s;
+}
+
+.five {
+  animation: dropIn .6s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.15s;
+}
+
+.six {
+  animation: dropIn .55s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.4s;
+}
+
+.seven {
+  animation: dropIn .55s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.62s;
+}
+
+.eight {
+  animation: dropIn .55s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.84s;
+}
+
+.nine {
+  animation: dropIn .6s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2.04s;
+}
+
+.ten {
+  animation: dropIn .65s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2.24s;
+}
+
+.eleven {
+  animation: dropIn .7s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2.42s;
+}
+
+.twelve {
+  animation: dropIn .75s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2.6s;
+}
+
+.thirteen {
+  animation: dropIn .9s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2.75s;
+}
+
